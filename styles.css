@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #7fff00, #00ff00, #00ff7f, #00ffff, #007fff, #0000ff, #7f00ff, #ff00ff, #ff007f);
+    background-size: 1200% 100%;
+    animation: gradient 10s ease infinite;
+     box-align: center;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 0%; }
+    100% { background-position: 0% 0%; }
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+.controls {
+    margin: 2rem;
+}
+
+.color-picker, .color-palette, .hair-style {
+    margin-bottom: 1rem;
+}
+
+.hair-model {
+    margin: 2rem;
+}
+
+#hair {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    line-height: 100px;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.short {
+    border-radius: 50%;
+}
+
+.long {
+    border-radius: 0;
+}
+
+.curly {
+    border-radius: 0;
+    border: 2px dashed #666;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
